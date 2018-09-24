@@ -1,0 +1,132 @@
+/* -------------------------------------------
+   -- GRID
+   ------------------------------------------- */
+
+div.mainGrid,
+div.gridNav {
+	width: 100%;
+}
+div.grid {
+	width: 100%;
+	max-width: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	background: var(--grid);
+}
+
+div.grid table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 1em;
+}
+
+div.grid th {
+	white-space: nowrap;
+	overflow: hidden;
+	background: linear-gradient(to top, var(--main-dark), var(--main-light));
+	color: white;
+	border: 1px solid #e0e0e0;
+	text-align: left;
+	padding: 2px 4px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+div.grid th.sortable {
+	cursor: pointer;
+	position: relative;
+}
+
+div.grid th.sortable:hover {
+	background: var(--main);
+}
+
+div.grid tr.even {
+	background: var(--grid-row-even);
+}
+
+div.grid tr.odd {
+	background: var(--grid-row-odd);
+}
+
+div.grid tr:hover, div.grid tr:hover td, div.grid tr:hover td a {
+	background: var(--grid-row-over);
+	color: var(--grid-row-over-text) !important;
+}
+
+div.grid td {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 2px 4px;
+	border: 1px solid #e0e0e0;
+}
+
+div.grid td a {
+	color: var(--highlight);
+	text-decoration: underline;
+}
+
+div.grid td a:hover {
+	text-decoration: none;
+}
+
+div.grid td.icon {
+	color: var(--highlight);
+}
+
+div.grid .sorticon {
+	float: right;
+	padding-right: 8px;
+	line-height: initial;
+}
+div.grid .sorticon.up {
+	margin-top: 5px;
+}
+div.gridNav {
+	text-align: center;
+}
+div.gridNav button {
+	background: white;
+	color: #333;
+	border-radius: 3px;
+	border: 1px solid #333;
+	width: 32px;
+	height: 24px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+div.gridNav button:hover {
+	color: var(--main-light);
+	border-color: var(--main-light);
+}
+div.gridNav button:disabled,
+div.gridNav button:disabled:hover {
+	background: #e0e0e0;
+	color: #888;
+	border-color: #888;
+	cursor: auto;
+}
+div.gridNav select {
+	-webkit-appearance:none;
+	text-align: center;
+	padding: 1px 16px 0 16px;
+	border-radius: 3px;
+	background: white;
+	border: 1px solid #333;
+	color: #333;
+	margin-top: -2px;
+}
+div.gridNav select:hover,
+div.gridNav select:active,
+div.gridNav select:focus {
+	border: 1px solid var(--main-light);
+	color: var(--main-light);
+}
+div.gridNav img.loading {
+	width: auto;
+	height: 20px;
+	opacity: 1;
+	margin-right: 4px;
+}

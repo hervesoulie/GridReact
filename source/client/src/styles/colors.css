@@ -1,0 +1,20 @@
+:root{
+	--body:#ddd;
+	--text:#000;
+
+	--main:#7a0b7b;
+	--main-light:#cf0fd2;
+	--main-dark:#5c085e;
+	--main-alpha-75:rgba(122, 11, 123, 0.75);
+	--main-alpha-50:rgba(122, 11, 123, 0.5);
+
+	--highlight:#457b0b;
+	--highlight-light:#5ea90f;
+	--highlight-alpha-75:rgba(69, 123, 11, 0.75);
+
+	--grid: #ffffff;
+	--grid-row-even:#fce8fd;
+	--grid-row-odd:#ffffff;
+	--grid-row-over:#cf0fd2;
+	--grid-row-over-text:#ffffff;
+}
